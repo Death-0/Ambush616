@@ -1,13 +1,9 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Niko's Mod V8", "DarkTheme")
+local Window = Library.CreateLib("Niko's Mod V10", "DarkTheme")
 
 --Main
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
-
-MainSection:NewButton("Infinite Yield", "A list of Commands", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
 
 
 MainSection:NewButton("Vereus", "Vereus Monster needs r6", function()
@@ -44,7 +40,7 @@ end)
 
 
 PlayerSection:NewSlider("JumpPower", "Jumphigh", 350, 50, function(s) 
-    game.Players.LocalPlayer.Character.Humanoid.jumppower = s
+    game.Players.LocalPlayer.Character.Humanoid.jumpPower = s
 end)
 
 PlayerSection:NewButton("R6 Updated Fe", "r6 Reanmation Updated", function()
@@ -56,61 +52,118 @@ PlayerSection:NewButton("Fe Tall-Man", "Big man tick and tanky", function()
 end)
 
 
-PlayerSection:NewButton("Anti-FLing", "Cant be flong", function()
+PlayerSection:NewButton("Anti-Fling", "Cant be flong", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/tDfh34eK"))();
 end)
 
 
---Scripts
-local Scripts = Window:NewTab("Scripts")
-local ScriptsSection = Scripts:NewSection("Scripts")
+--Hubs
+local Hubs = Window:NewTab("Hubs")
+local HubsSection = Hubs:NewSection("Hubs")
 
-ScriptsSection:NewButton("Dex Protection-Updated", "its the roblox studio Explorper", function()
+HubsSection:NewButton("Dex V2", "its ur mom", function()
 	loadstring(game:HttpGet('https://pastebin.com/raw/riYe9WrG'))()
 end)
 
-ScriptsSection:NewButton("Spectrum Glticher", "Cool One Lights and flickerness be aware", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/GeneralScriptz/spectrum-glitcher/main/Spectrum%20glitcher')))()
-end)
 
-ScriptsSection:NewButton("Gale Fighter", "Fling em all", function()
-    loadstring(game:HttpGet(('https://pastebin.com/raw/5uy7xWe4')))()
-end)
 
-ScriptsSection:NewButton("Xester", "Fight them off", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/RPwyPvEi"))()
-end)
-
-ScriptsSection:NewButton("SlenderMan", "Big Man", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/HPz5KFU3"))()
-end)
-
-ScriptsSection:NewButton("Ender", "He's just chilling", function()
-    loadstring(game:HttpGet(('https://github.com/PhoenixAceVFX/Roblox-Scripts/blob/master/Ender.lua')))()
-end)
-
-ScriptsSection:NewButton("Sussy hub", "It sus thats it", function()
+HubsSection:NewButton("Sussy hub R6", "It sus thats it", function()
     loadstring(game:HttpGet(('https://gist.githubusercontent.com/Nilrogram/8b0c8bd710be142f383c71f79279752c/raw/e4fb01a7de7cd498bb53270d2ad191dfab268a88/FE%2520SussyHub'),true))();
 end)
 
-ScriptsSection:NewButton("Dino hub", "Dino hub ", function()
+HubsSection:NewButton("Dino hub", "Dino hub ", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/8gn3LTFB'),true))();
 end)
 
 
-ScriptsSection:NewButton("Pendulum Hub", "Pendulum Hub", function()
+HubsSection:NewButton("Pendulum Hub", "Opens Pendulum Hub", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))();
 end)
 
 
-ScriptsSection:NewButton("I dont even know what to call this", "are you stupid?", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Jm629TbYa"))();
+HubsSection:NewButton("A Gui Thats All", "are you stupid?", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Jm629TbY"))();
 end)
 
 
-ScriptsSection:NewButton("I just call it boobs", "Idk its boobs", function()
+HubsSection:NewButton("T0PK0K Diffrent 3.0", "Opens up T0PKOK 3.0", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/SikGfE9u'),true))();
 end)
+
+HubsSection:NewButton("Server-Sided RemoteEvent", "Opens up a Server-Sided Needs Remote", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/TPfwS2xN'),true))();
+end)
+
+
+HubsSection:NewButton("Removed", "Remove ", function()
+    loadstring(game:HttpGet((''),true))();
+end)
+
+
+HubsSection:NewButton("Server-Sided Executor", "The name says it", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/RG3a7UG6'),true))();
+end)
+
+
+HubsSection:NewButton("Dex v5", "OPENS up dex v5 ", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/dyyll/Dex-V5-leak/main/Dex%20V5.lua'),true))();
+end)
+
+
+HubsSection:NewButton("BackdoorScan", "Backdoor scan to see if game backdoored", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/1Pg0xW6J'),true))();
+end)
+
+--Other
+local Other = Window:NewTab("Other")
+local Other = Other:NewSection("Other")
+
+Other:NewButton("Spectrum Glticher R6", "Cool One Lights and flickerness be aware", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/GeneralScriptz/spectrum-glitcher/main/Spectrum%20glitcher')))()
+end)
+
+Other:NewButton("Gale Fighter R6", "Fling em all R6", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/5uy7xWe4')))()
+end)
+
+Other:NewButton("Xester R6", "Fight them off R6", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/RPwyPvEi"))()
+end)
+
+Other:NewButton("SlenderMan", "Big Man", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HPz5KFU3"))()
+end)
+
+Other:NewButton("Ender R6 ", "He's just chilling", function()
+    loadstring(game:HttpGet(('https://github.com/PhoenixAceVFX/Roblox-Scripts/blob/master/Ender.lua')))()
+end)
+
+
+--Admin
+local Admin = Window:NewTab("Admin")
+local AdminSection = Admin:NewSection("Admin")
+
+AdminSection:NewButton("Infinite Yield", "A list of Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+AdminSection:NewButton("Reviz admin", "Commands", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/9dsrirD5"))();
+end)
+
+
+AdminSection:NewButton("Fates admin", "Commands", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+AdminSection:NewButton("ShatterVast admin", "Commands", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+AdminSection:NewButton("CMD-X admin", "CMDX-X Commands", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+
 
 --Credits
 local Credits = Window:NewTab("Credits")
