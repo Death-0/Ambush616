@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Niko's Mod V10", "DarkTheme")
+local Window = Library.CreateLib("Niko's Mod V10.3", "DarkTheme")
 
 --Main
 local Main = Window:NewTab("Main")
@@ -90,15 +90,6 @@ HubsSection:NewButton("T0PK0K Diffrent 3.0", "Opens up T0PKOK 3.0", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/SikGfE9u'),true))();
 end)
 
-HubsSection:NewButton("Server-Sided RemoteEvent", "Opens up a Server-Sided Needs Remote", function()
-    loadstring(game:HttpGet(('https://pastebin.com/raw/TPfwS2xN'),true))();
-end)
-
-
-HubsSection:NewButton("Removed", "Remove ", function()
-    loadstring(game:HttpGet((''),true))();
-end)
-
 
 HubsSection:NewButton("Server-Sided Executor", "The name says it", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/RG3a7UG6'),true))();
@@ -113,6 +104,11 @@ end)
 HubsSection:NewButton("BackdoorScan", "Backdoor scan to see if game backdoored", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/1Pg0xW6J'),true))();
 end)
+
+HubsSection:NewButton("Turtle Spy", "Opens up Turtle spy", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/zzerexx/scripts/main/TurtleSpy.lua'),true))();
+end)
+
 
 --Other
 local Other = Window:NewTab("Other")
